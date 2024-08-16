@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicodin Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page with Category Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar-brand" aria-labelledby="brand-label">
+                <img src="logo.png" alt="Vicodin Logo" class="logo" id="brand-label">
+                <span class="brand-name">Vicodin</span>
+            </div>
+            <div class="navbar-icons">
+                <input type="text" placeholder="Search here..." class="search-input" aria-label="Search input">
+                <a href="#" class="icon user-icon" aria-label="User account">👤</a>
+                <a href="#" class="icon cart-icon" aria-label="Shopping cart with 2 items">🛒</a>
+                <span class="cart-count">2</span>
+                <span class="cart-total">YOUR CART: $89.25</span>
+            </div>
+        </nav>
+
+        <nav class="secondary-navbar" aria-label="Secondary navigation">
+            <ul class="categories-menu">
+                <li>
+                    <a href="#" class="categories-icon" aria-label="Categories">
+                        <span class="menu-icon">&#9776;</span>
+                        CATEGORIES
+                        <span class="down-arrow">&#9662;</span>
+                    </a>
+                    <ul>
+                        <!-- Dropdown content can go here -->
+                        <li><a href="#">Subcategory 1</a></li>
+                        <li><a href="#">Subcategory 2</a></li>
+                        <li><a href="#">Subcategory 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="main-menu">
+                <li><a href="#" aria-label="Home">Home +</a></li>
+                <li><a href="#" aria-label="About Us">About +</a></li>
+                <li><a href="#" aria-label="Shop">Shop +</a></li>
+                <li><a href="#" aria-label="News">News +</a></li>
+                <li><a href="#" aria-label="Pages">Pages +</a></li>
+                <li><a href="#" aria-label="Contact Us">Contact</a></li>
+            </ul>
+            <a href="tel:+12345678910" class="icon phone-icon" aria-label="Call us at +123-456-789-10">📞 +123-456-789-10</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="main-content">
+            <div class="banner">
+                <div class="banner-content">
+                    <h2>Gold Standard Pre-Workout</h2>
+                    <p>Starting at $16.99</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+    
+        <aside class="sidebar">
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>First Aid Kits Pre Package</h3>
+                    <p>Starting at $16.99</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+                <div class="additional-cart">
+                    <h3>Hand Sanitizer Package</h3>
+                    <p>$199.00/60pcs</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+<!-- Category Slider -->
+<div class="slider-container">
+    <button class="prev-button" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="slider-track">
+        <div class="slide">
+            <i class="category-icon">🏷️</i>
+            <h6 class="category-title">Best Deals</h6>
+        </div>
+        <div class="slide">
+            <i class="category-icon">🦠</i>
+            <h6 class="category-title">Germs Pads</h6>
+        </div>
+        <div class="slide">
+            <i class="category-icon">🛠️</i>
+            <h6 class="category-title">Accessories</h6>
+        </div>
+        <div class="slide">
+            <i class="category-icon">🧪</i>
+            <h6 class="category-title">Medicine Cap</h6>
+        </div>
+        <div class="slide">
+            <i class="category-icon">🦷</i>
+            <h6 class="category-title">Dental Item</h6>
+        </div>
+        <div class="slide">
+            <i class="category-icon">🏷️</i>
+            <h6 class="category-title">Best Deals</h6>
+        </div>
+        <div class="slide">
+            <i class="category-icon">📦</i>
+            <h6 class="category-title">All Products</h6>
+        </div>
+    </div>
+    <button class="next-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- #main page html: -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicodin Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar-brand" aria-labelledby="brand-label">
+                <img src="logo.png" alt="Vicodin Logo" class="logo" id="brand-label">
+                <span class="brand-name">Vicodin</span>
+            </div>
+            <div class="navbar-icons">
+                <input type="text" placeholder="Search here..." class="search-input" aria-label="Search input">
+                <a href="#" class="icon user-icon" aria-label="User account">👤</a>
+                <a href="#" class="icon cart-icon" aria-label="Shopping cart with 2 items">🛒</a>
+                <span class="cart-count">2</span>
+                <span class="cart-total">YOUR CART: $89.25</span>
+            </div>
+        </nav>
+
+        <nav class="secondary-navbar" aria-label="Secondary navigation">
+            <ul class="categories-menu">
+                <li>
+                    <a href="#" class="categories-icon" aria-label="Categories">
+                        <span class="menu-icon">&#9776;</span>
+                        CATEGORIES
+                        <span class="down-arrow">&#9662;</span>
+                    </a>
+                    <ul>
+                        < Dropdown content can go here -->
+                        <!-- <li><a href="#">Subcategory 1</a></li>
+                        <li><a href="#">Subcategory 2</a></li>
+                        <li><a href="#">Subcategory 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="main-menu">
+                <li><a href="#" aria-label="Home">Home +</a></li>
+                <li><a href="#" aria-label="About Us">About +</a></li>
+                <li><a href="#" aria-label="Shop">Shop +</a></li>
+                <li><a href="#" aria-label="News">News +</a></li>
+                <li><a href="#" aria-label="Pages">Pages +</a></li>
+                <li><a href="#" aria-label="Contact Us">Contact</a></li>
+            </ul>
+            <a href="tel:+12345678910" class="icon phone-icon" aria-label="Call us at +123-456-789-10">📞 +123-456-789-10</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="main-content">
+            <div class="banner">
+                <div class="banner-content">
+                    <h2>Gold Standard Pre-Workout</h2>
+                    <p>Starting at $16.99</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+    
+        <aside class="sidebar">
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>First Aid Kits Pre Package</h3>
+                    <p>Starting at $16.99</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+                <div class="additional-cart">
+                    <h3>Hand Sanitizer Package</h3>
+                    <p>$199.00/60pcs</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </aside>
+
+       
+    </main>
+</body>
+</html> -->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicodin Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar-brand" aria-labelledby="brand-label">
+                <img src="logo.png" alt="Vicodin Logo" class="logo" id="brand-label">      
+                <span class="brand-name">Vicodin</span>
+            </div>
+            <div class="navbar-icons">
+                <input type="text" placeholder="Search here..." class="search-input" aria-label="Search input">
+                <a href="#" class="icon user-icon" aria-label="User account">👤</a>
+                <a href="#" class="icon cart-icon" aria-label="Shopping cart with 2 items">🛒</a>
+                <span class="cart-count">2</span>
+                <span class="cart-total">$89.25</span>
+               
+            </div>
+        </nav>
+        
+        <nav class="secondary-navbar" aria-label="Secondary navigation">
+            <ul class="menu">
+                <li>
+                    <a href="#" class="categories-icon" aria-label="Categories">
+                        <span class="menu-icon">&#9776;</span> <!-- Three lines icon -->
+                        <!-- Categories
+                        <span class="down-arrow">&#9662;</span> <!-- Down arrow icon -->
+                    <!-- </a> -->
+                <!-- </li>  -->
+                <!-- Other menu items -->
+                <!-- <li><a href="#" aria-label="Home">Home +</a></li>
+                <li><a href="#" aria-label="About Us">About +</a></li>
+                <li><a href="#" aria-label="Shop">Shop +</a></li>
+                <li><a href="#" aria-label="News">News +</a></li>
+                <li><a href="#" aria-label="Pages">Pages +</a></li>
+                <li><a href="#" aria-label="Contact Us">Contact +</a></li>
+                <a href="tel:+12345678910" class="icon phone-icon" aria-label="Call us at +123-456-789-10">📞 +123-456-789-10</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="main-content">
+            <div class="banner">
+                <div class="banner-content">
+                    <h2>Gold Standard Pre-Workout</h2>
+                    <p>Starting at &16.99</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+                <div class="banner-image">
+                    <img src="/container_design1.jpg" alt="Gold Standard Pre-Workout">
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="first-aid-kit.png" alt="First Aid Kits">
+                    <h3>First Aid Kits Pre Package</h3>
+                    <p>Starting at &16.99</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="hand-sanitizer.png" alt="Hand Sanitizer Package">
+                    <h3>Hand Sanitizer Package</h3>
+                    <p>$199.00/60pcs</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar"> -->
+            <!-- Add any right sidebar content here -->
+        <!-- </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
