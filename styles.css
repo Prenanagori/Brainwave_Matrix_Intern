@@ -222,7 +222,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('/container_design1.jpg'); /* Set your background image here */
+    background-image: url('/Images/container_design1.jpg'); /* Set your background image here */
     background-size: cover;
     background-position: center;
     padding: 200px 60px;
@@ -231,11 +231,16 @@ header {
     margin-right: 10px;
     margin-bottom: 20px;
     height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.banner:hover {
+    transform: scale(1.05);
 }
 
 .banner-content {
     max-width: 60%;
     color: #333;
+
 }
 
 .banner-content h2 {
@@ -286,7 +291,7 @@ header {
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background-image: url('/img-banner1.jpg'); /* Set your product grid background image here */
+    background-image: url('/Images/img-banner1.jpg'); /* Set your product grid background image here */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -294,7 +299,12 @@ header {
     width: 85%; /* Adjust the width as needed */
     height: 250px; /* Adjust the height as needed */
     margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.product-card:hover{
+    transform: scale(1.05); 
+}
+
 
 .product-card img {
     max-width: 100%;
@@ -329,7 +339,7 @@ header {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background-image: url('/img-banner2.jpg'); /* Set your product grid background image here */
+    background-image: url('/Images/img-banner2.jpg'); /* Set your product grid background image here */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -337,7 +347,12 @@ header {
     width: 85%; /* Adjust the width as needed */
     height: 250px; /* Adjust the height as needed */
     margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.additional-cart:hover{
+    transform: scale(1.05); 
+}
+
 /* 
 .additional-cart h3 {
     font-size: 23px;
@@ -394,7 +409,9 @@ header {
 .category-item-img i {
     font-size: 40px;
     color: #333;
+
 }
+
 
 .category-item-name h6 {
     margin-top: 10px;
@@ -453,6 +470,7 @@ header {
     gap: 20px; /* Space between left sidebar and main content */
     padding: 20px; /* Padding around the content */
     box-sizing: border-box; /* Include padding in the element's width and height */
+    
 }
 /* Left sidebar container styling */
 .left-sidebar-container {
@@ -569,7 +587,7 @@ header {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    background-image: url('/banner-vaccine.avif'); /* Add your background image URL here */
+    background-image: url('/Images/banner-vaccine.avif'); /* Add your background image URL here */
     background-size: cover; /* Ensure the background image covers the entire banner */
     align-items: center;
     padding: 80px; /* Remove padding to ensure the banner size is accurate */
@@ -928,7 +946,7 @@ header {
 }
 /* Facial covering mask banner */
 .custom-about-us-container {
-    background-image: url('/images=banner.jfif');
+    background-image: url('/Images/images=banner.jfif');
     background-size: cover;
     background-position: center;
     padding: 115px 0 110px;
@@ -1000,7 +1018,7 @@ header {
 /* latest blogs */
 /* Facial covering mask banner */
 .custom-about-us-container {
-    background-image: url('/images/banner.jfif'); /* Corrected URL format */
+    background-image: url('/Images/images/banner.jfif'); /* Corrected URL format */
     background-size: cover;
     background-position: center;
     padding: 115px 0 110px;
@@ -1070,7 +1088,7 @@ header {
 }
 /* Facial covering mask banner */
 .custom-about-us-container {
-    background-image: url('/images=banner.jfif'); /* Corrected URL format */
+    background-image: url('/Images/images=banner.jfif'); /* Corrected URL format */
     background-size: cover;
     background-position: center;
     padding: 115px 0 110px;
